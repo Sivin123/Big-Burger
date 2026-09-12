@@ -1,0 +1,103 @@
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+main > div {
+  background-color: #E3DFDE;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 20px;
+  text-align: left;
+}
+
+main > div > a {
+  color: #ff5100;
+  font-size: 18px;
+}
+
+main > div > a:hover {
+  background-color: #4B3C35;
+  color: #E3DFDE;
+}
+
+main > div > a:focus {
+  background-color: #4B3C35;
+  color: #E3DFDE;
+  outline: none;
+}
+
+#container1 {
+  background-color: #fafafa;
+  color: #2d2d2d;
+  grid-area: area1;
+  text-align: justify;
+}
+
+#container2 {
+  grid-area: area2;
+  background-color: #fafafa;
+  color: #2d2d2d;
+  text-align: justify;
+}
+
+#container3 {
+  grid-area: area3;
+  background-color: #fafafa;
+  color: #2d2d2d;
+  text-align: justify;
+}
+
+#container4 {
+  grid-area: area4;
+  background-color: #fafafa;
+  color: #2d2d2d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container4 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#container4 p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'area1'
+    'area2'
+    'area3'
+    'area4';
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    grid-template-areas:
+      'area1 area2'
+      'area3 area4';
+  }
+}
+
+figcaption {
+  font-size: 15px;
+}
